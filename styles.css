@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 0;
+}
+
+.wrapper {
+  padding: 0 75px;
+}
+
+
+.page_1 {
+  max-width: 960px;
+  min-height: 500px;
+  margin: 0 auto;
+  background: url(img/put_yor_imagies.png) no-repeat 50% 50% / cover;
+  text-align: center;
+}
+
+.header_1 {
+  padding: 20px 0px;
+  max-width: 565px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: inline-block;
+  width: 70px;
+  height: 26px;
+  background: url(img/logo.png) no-repeat 50% 50% / cover;
+  vertical-align: middle;
+}
+
+.links {
+  display: inline-block;
+  width: calc(100% - 220px);
+  vertical-align: middle;
+  margin-left: calc(100% - 435px);
+ text-align: justify;
+}
+
+ .links * {
+  display: inline-block;
+  text-decoration: none;
+  color: #f4f5f9;
+  font-family: "Open Sans";
+  font-size: 7px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: justify;
+  vertical-align: middle;
+  height: 27px;
+  line-height: 30px;
+   border-bottom: 0.5px solid transparent;
+   transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.helper {
+  vertical-align: middle;
+width: 100%;
+height: 0;
+visibility: hidden;
+}
+
+.links a:hover {
+  border-bottom: 0.5px solid #e74c3c;
+  color: #e74c3c;
+}
+
+.page_1 h2 {
+  color: #f4f5f9;
+font-family: "Source Sans Pro";
+font-size: 12px;
+font-weight: 400;
+letter-spacing: 0.6px;
+margin: 0;
+margin-top: 116px;
+text-align: center;
+}
+
+.page_1 h1 {
+color: #f4f5f9;
+font-family: "Open Sans";
+font-size: 36px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 3.6px;
+margin: 0;
+text-align: center;
+margin-top: 22px;
+}
+
+.page_1 h3 {
+color: #cbc6c0;
+font-family: "Open Sans";
+font-size: 7px;
+font-weight: 400;
+line-height: 12px;
+margin: 0 auto;
+width: 280px;
+margin-top: 23px;
+}
+
+.design_1 {
+  text-align: center;
+  margin-top: 22px;
+}
+
+
+.button_1 {
+  display: inline-block;
+  width: 112px;
+  height: 28px;
+  border: 0.5px solid #ffffff;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.12px;
+  text-align: center;
+  margin-right: 15px;
+  line-height: 28px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.button_2 {
+  display: inline-block;
+  width: 112px;
+  height: 28px;
+  border: 0.5px solid #ffffff;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.12px;
+  text-align: center;
+  line-height: 28px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.buttons {
+  display: inline-block;
+  margin-top: 35px;
+  margin-bottom: 132px;
+}
+
+.button_1:hover {
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.25);
+  background-color: #e74c3c;
+}
+
+.button_2:hover {
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.25);
+  background-color: #e74c3c;
+}
