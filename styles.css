@@ -14,10 +14,20 @@ body {
 
 .page_1 {
   max-width: 960px;
-  min-height: 500px;
   margin: 0 auto;
   background: url(img/put_yor_imagies.png) no-repeat 50% 50% / cover;
   text-align: center;
+  position: relative;
+}
+
+.forma_1 {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  bottom:-16px;
+  left: 48%;
+  border-radius: 50%;
+  background: #f4f5f9 url(img/forma_1.png) no-repeat 50% 50% / 50%;
 }
 
 .header_1 {
@@ -163,3 +173,163 @@ margin-top: 23px;
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.25);
   background-color: #e74c3c;
 }
+
+.page_2 {
+   max-width: 565px;
+   margin: 0 auto;
+   padding-top: 62px;
+}
+.box_1_page_2 {
+  display: inline-block;
+  cursor: pointer;
+}
+.box_2_page_2 {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.box_3_page_2 {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.box_4_page_2 {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.page_2  h3 {
+  color: #6a6a6a;
+font-family: "Open Sans - Semibold";
+font-size: 9px;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 0.65px;
+margin: 0;
+margin-top: 15px;
+text-align: center;
+}
+
+.page_2 h4 {
+  max-width: 129px;
+  color: #999999;
+font-family: "Source Sans Pro";
+font-size: 6px;
+font-weight: bold;
+line-height: 10px;
+letter-spacing: 0.45px;
+text-align: center;
+margin: 0;
+margin-top: 20px;
+}
+
+.square{
+  width: 36px;
+  height: 36px;
+  border: 1px solid #999999;
+  opacity: 0.25;
+  margin: 0 auto;
+}
+
+.square .sleek_design {
+width: 100%;
+height: 100%;
+background: url(img/spectacles.png) no-repeat 50% 50% / 50%;
+}
+
+.box_1_page_2:hover > .square {
+  transform: rotateZ(45deg);
+  border: 1px solid #e74c3c;
+}
+
+.box_1_page_2:hover > .square > .sleek_design {
+   transform: rotateZ(-45deg);
+}
+
+.box_1_page_2:hover h3 {
+  color: #e74c3c;
+}
+
+.page_2 span {
+  border-bottom: 1.5px solid #6a6a6a;;
+  padding-bottom: 10px;
+}
+
+.square .clean_code {
+width: 100%;
+height: 100%;
+background: url(img/heart.png) no-repeat 50% 50% / 50%;
+}
+
+.box_2_page_2:hover > .square {
+  transform: rotateZ(45deg);
+  border: 1px solid #e74c3c;
+}
+
+.box_2_page_2:hover > .square > .clean_code {
+   transform: rotateZ(-45deg);
+}
+
+.box_2_page_2:hover h3 {
+  color: #e74c3c;
+}
+
+.page_2 span {
+  border-bottom: 1.5px solid #6a6a6a;;
+  padding-bottom: 10px;
+}
+
+.box_2_page_2 {
+  margin-left: 15px;
+}
+
+/**/
+.square .creative_ideas {
+width: 100%;
+height: 100%;
+background: url(img/lamp.png) no-repeat 50% 50% / 50%;
+}
+
+.box_3_page_2:hover > .square {
+  transform: rotateZ(45deg);
+  border: 1px solid #e74c3c;
+}
+
+.box_3_page_2:hover > .square > .creative_ideas {
+   transform: rotateZ(-45deg);
+}
+
+.box_3_page_2:hover h3 {
+  color: #e74c3c;
+}
+
+.box_3_page_2 {
+  margin-left: 15px;
+}
+
+/****/
+.square .free_support {
+width: 100%;
+height: 100%;
+background: url(img/support.png) no-repeat 50% 50% / 50%;
+}
+
+.box_4_page_2:hover > .square {
+  transform: rotateZ(45deg);
+  border: 1px solid #e74c3c;
+}
+
+.box_4_page_2:hover > .square > .free_support {
+   transform: rotateZ(-45deg);
+}
+
+.box_4_page_2:hover h3 {
+  color: #e74c3c;
+}
+
+.box_4_page_2 {
+  margin-left: 15px;
+  margin-bottom: 54px;
+}
+
+
