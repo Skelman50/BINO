@@ -1312,6 +1312,7 @@ visibility: hidden;
    left: 25%;
    width: 50%;
 }
+}
 
 @media (max-width: 500px) {
  .cont_page_6 .right_box {
@@ -1325,5 +1326,107 @@ visibility: hidden;
    top: 0;
    left: 0;
    margin-top: 20px;
+}
+}
+
+.page_7 {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 80px;
+  padding-bottom: 70px;
+  background: url(img/bcg_p7.png) no-repeat 50% 50% / cover;
+  text-align: center;
+}
+.User_Favourites, .Posts_Last_24_Hours, .Total_Posts, .Campaigns, .Amazing_Features, .for_media {
+  display: inline-block;
+}
+.Posts_Last_24_Hours, .Total_Posts, .Campaigns, .Amazing_Features {
+margin-left: 10%;
+}
+.page_7 .box1 {
+  margin: 0 auto;
+  width: 56px;
+  height: 56px;
+  background: url(img/white_heart.png) no-repeat 50% 50% / 25%;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+
+.page_7 .box2 {
+   margin: 0 auto;
+  width: 56px;
+  height: 56px;
+  background: url(img/box_2_p7.png) no-repeat 50% 50% / 25%;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+
+.page_7 .box3 {
+   margin: 0 auto;
+  width: 56px;
+  height: 56px;
+  background: url(img/bcg_box3_p7.png) no-repeat 50% 50% / 25%;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+
+.page_7 .box4 {
+   margin: 0 auto;
+  width: 56px;
+  height: 56px;
+  background: url(img/bcg_box4_p7.png) no-repeat 50% 50% / 25%;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+
+.page_7 .box5 {
+   margin: 0 auto;
+  width: 56px;
+  height: 56px;
+  background: url(img/bcg_box5_p7.png) no-repeat 50% 50% / 25%;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+
+.page_7 h1 {
+  margin: 0;
+  text-align: center;
+  color: #f4f5f9;
+  font-family: "Source Sans Pro";
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  line-height: 35px;
+  margin-top: 10px;
+}
+
+.page_7 h2 {
+   margin: 0;
+  text-align: center;
+  color: #f4f5f9;
+  font-family: "Source Sans Pro";
+  font-size: 9px;
+  font-weight: 400;
+}
+
+
+
+@media (max-width: 950px) {
+.Amazing_Features {
+  margin-top: 25px;
+  margin-right: 10%;
+}
+}
+
+@media (max-width: 420px) {
+.Amazing_Features {
+  margin-top: 25px;
+  margin-right: 10%;
+}
+.Campaigns{
+   margin-top: 25px;
+  margin-right: 10%;
 }
 }
