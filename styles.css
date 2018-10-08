@@ -1744,3 +1744,168 @@ margin-left: 10%;
 
 }
 
+.page_9 {
+  max-width: 960px;
+  height: 370px;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  background: url(img/bcg9_1.png) no-repeat 0% 100% / 105% 65%, url(img/bcg9.png) no-repeat 50% 50% / cover;
+}
+
+.elips_1 {
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  top: 72%;
+  left: 15%;
+  border:2px solid #e74c3c;
+  border-radius: 50%;
+  background: url(img/Ellipse_1.png) no-repeat 50% 50% / cover;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+.elips_2 {
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  top: 65%;
+  left: 31%;
+  border:2px solid #e74c3c;
+  border-radius: 50%;
+  background: url(img/Ellipse_2.png) no-repeat 50% 50% / cover;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+.elips_3 {
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  top: 63%;
+  left: 49%;
+  border:2px solid #e74c3c;
+  border-radius: 50%;
+  background: url(img/Ellipse_3.png) no-repeat 50% 50% / cover;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+.elips_4 {
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  top: 67%;
+  left: 66%;
+  border:2px solid #e74c3c;
+  border-radius: 50%;
+  background: url(img/Ellipse_4.png) no-repeat 50% 50% / cover;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+.elips_5 {
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  top: 60%;
+  left: 84%;
+  border:2px solid #e74c3c;
+  border-radius: 50%;
+  background: url(img/Ellipse_5.png) no-repeat 50% 50% / cover;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+.fon {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #e74c3c;
+  opacity: 0;
+  border-radius: 50%;
+  animation-name: fon_reverse;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fon {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes fon_reverse {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.elips_1:hover, .elips_2:hover, .elips_3:hover, .elips_4:hover, .elips_5:hover {
+  transform: scale(1.35);
+}
+
+.elips_1:hover > .fon, .elips_2:hover > .fon, .elips_3:hover > .fon, 
+.elips_4:hover > .fon, .elips_5:hover > .fon {
+  opacity: 0.5;
+  animation-name: fon;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+.elips_1:hover > .text_about, .elips_2:hover > .text_about, .elips_3:hover > .text_about,
+.elips_4:hover > .text_about, .elips_5:hover > .text_about {
+  opacity: 1;
+  animation-name: fon;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+.text_about {
+  position: absolute;
+  text-align: center;
+  width: 87px;
+  top: 110%;
+  left: -140%;
+  opacity: 0;
+  animation-name: fon_reverse;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+.page_9 h1 {
+  color: #e74c3c;
+  font-family: "Open Sans - Semibold";
+  font-size: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+}
+
+.page_9 h2 {
+  color: #ffffff;
+  font-family: "Source Sans Pro";
+  font-size: 5px;
+  font-weight: bold;
+  line-height: 10px;
+  letter-spacing: 0.7px;
+}
+
+.ukazatel {
+  margin: 0 auto;
+  width: 0.5px;
+  height: 15px;
+  background-color: white;
+}
