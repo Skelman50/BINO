@@ -1750,6 +1750,7 @@ margin-left: 10%;
   position: relative;
   margin: 0 auto;
   text-align: center;
+  padding-top: 75px;
   background: url(img/bcg9_1.png) no-repeat 0% 100% / 105% 65%, url(img/bcg9.png) no-repeat 50% 50% / cover;
 }
 
@@ -1885,7 +1886,7 @@ margin-left: 10%;
   animation-timing-function: ease-in-out;
 }
 
-.page_9 h1 {
+.name_about {
   color: #e74c3c;
   font-family: "Open Sans - Semibold";
   font-size: 8px;
@@ -1894,7 +1895,7 @@ margin-left: 10%;
   letter-spacing: 0.9px;
 }
 
-.page_9 h2 {
+.profa {
   color: #ffffff;
   font-family: "Source Sans Pro";
   font-size: 5px;
@@ -1908,4 +1909,149 @@ margin-left: 10%;
   width: 0.5px;
   height: 15px;
   background-color: white;
+}
+
+.page_9 h1 {
+  color: #ffffff;
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  margin: 0;
+}
+
+.page_9 h2 {
+  color: #f4f5f9;
+  font-family: "Open Sans";
+  font-size: 7px;
+  font-weight: 400;
+  line-height: 15px;
+  margin-bottom: 10px;
+}
+
+
+
+.page_10 {
+  max-width: 960px;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  padding-left:185px;
+  padding-right: 185px;
+  background-color: #f4f5f9;
+}
+
+.page_10 h1 {
+  color: #6a6a6a;
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.page_10 h2 {
+  color: #999999;
+  font-family: "Open Sans";
+  font-size: 7px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.page_10 .design_1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.osha, .nyc1,.nyc2, .bbb, .epa, .dummy, .logotype, .imaginarium, .randombrand, .anotherlogo  {
+  display: inline-block;
+  width: 105px;
+  height: 50px;
+  background-color: #ffffff;
+  vertical-align: middle;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  padding: 0 auto;
+  position: relative;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.osha div  {
+position: absolute;
+width: 100%;
+height: 100%;
+background: url(img/osha.png) no-repeat 50% 50% / 50%;
+opacity: 0.31;
+}
+
+.nyc1 div  {
+position: absolute;
+width: 100%;
+height: 100%;
+background:#ffffff url(img/nyc1.png) no-repeat 50% 50% / 50%;
+opacity: 0.31;
+}
+
+.nyc2 div {
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: #ffffff;
+background: url(img/nyc2.png) no-repeat 50% 50% / 50%;
+opacity: 0.31;
+}
+
+.bbb div  {
+position: absolute;
+width: 100%;
+height: 100%;
+background:#ffffff url(img/bbb.png) no-repeat 50% 50% / 50%;
+opacity: 0.31;
+}
+
+.epa div  {
+position: absolute;
+width: 100%;
+height: 100%;
+background:#ffffff url(img/epa.png) no-repeat 50% 50% / 50%;
+opacity: 0.31;
+}
+
+.osha div,.epa div,.bbb div,.nyc2 div,.nyc1 div {
+ transition-duration: 0.5s;
+ transition-timing-function: ease-in-out;
+}
+
+.osha div:hover,.epa div:hover,.bbb div:hover,.nyc2 div:hover,.nyc1 div:hover {
+  background-color: red;
+  opacity: 1;
+} 
+
+.dummy  {
+background:#ffffff url(img/dymmy.png) no-repeat 50% 50% / cover;
+}
+
+.logotype  {
+background:#ffffff url(img/logotype.png) no-repeat 50% 50% / 50%;
+}
+
+.imaginarium  {
+background:#ffffff url(img/imaginarium.png) no-repeat 50% 50% / cover;
+}
+
+.randombrand  {
+background:#ffffff url(img/randombrand.png) no-repeat 50% 50% / 80% 80%;
+}
+
+.anotherlogo  {
+background:#ffffff url(img/anotherlogo.png) no-repeat 50% 50% / 80% 80%;
+}
+
+.dummy:hover,.logotype:hover,.imaginarium:hover,.randombrand:hover,.anotherlogo:hover{
+  background-color: red;
 }
