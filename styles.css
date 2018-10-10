@@ -2055,3 +2055,416 @@ background:#ffffff url(img/anotherlogo.png) no-repeat 50% 50% / 80% 80%;
 .dummy:hover,.logotype:hover,.imaginarium:hover,.randombrand:hover,.anotherlogo:hover{
   background-color: red;
 }
+
+
+@media (max-width: 680px) {
+.page_10 {
+ padding-left: 100px;
+ padding-right: 100px;
+  }
+  .page_10 .design_1 {
+    display: none;
+  }
+  .page_10 h2 {
+    margin-bottom: 15px;
+  }
+}
+
+.page_11 {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 75px;
+  background-color: #ffffff;
+}
+
+.page_11 h1 {
+  color: #6a6a6a;
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.page_11 h2 {
+  color: #999999;
+  font-family: "Open Sans";
+  font-size: 7px;
+  margin: 0;
+}
+
+.page_11 .design_1 {
+  margin:0;
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+.page_11 input {
+  display: block;
+}
+
+.coffee{
+  display: inline-block;
+  width: 480px;
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+}
+
+.left_coffee {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  padding-top: 50%;
+  background: url(img/cup_of_coffee.png) no-repeat 50% 50% / cover;
+  z-index: 0
+}
+
+
+.right_coffee {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: -240px;
+  width: 480px;
+  height: 100%;
+  background-color: red;
+  text-align: left;
+  z-index: 2;
+}
+
+
+.coffee_on {
+  display: block;
+  color: #ffffff;
+  font-family: "Open Sans - Semibold Italic";
+  font-size: 9px;
+  font-weight: 400;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.coffee_off {
+  display: none;
+  color: #ffffff;
+  font-family: "Open Sans - Semibold Italic";
+  font-size: 9px;
+  font-weight: 400;
+  font-style: italic;
+  cursor: pointer;
+}
+
+@keyframes read_left {
+  0% {
+    right: -240px
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+@keyframes read_left_back {
+  0% {
+    right: 0px
+  }
+  100% {
+    right: -240px;
+  }
+}
+
+
+#coffee_on:checked ~ .coffee .right_coffee{
+  animation-name: read_left;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  right:0px;
+  text-align: center;
+}
+
+#coffee_on:checked ~ .coffee .right_coffee .coffee_off{
+display: block;
+}
+
+#coffee_on:checked ~ .coffee .right_coffee .coffee_on{
+display: none;
+}
+
+
+#coffee_off:checked ~ .coffee .right_coffee{
+  animation-name: read_left_back;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  right:-240px;
+  text-align: left;
+}
+
+/**/
+
+.clock{
+  display: inline-block;
+  width: 480px;
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+}
+
+.left_clock {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  padding-top: 50%;
+  background: url(img/clock.png) no-repeat 50% 50% / cover;
+  z-index: 0
+}
+
+
+.right_clock {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: -240px;
+  width: 480px;
+  height: 100%;
+  background-color: red;
+  text-align: left;
+  z-index: 2;
+}
+
+
+.clock_on {
+  display: block;
+  color: #ffffff;
+  font-family: "Open Sans - Semibold Italic";
+  font-size: 9px;
+  font-weight: 400;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.clock_off {
+  display: none;
+  color: #ffffff;
+  font-family: "Open Sans - Semibold Italic";
+  font-size: 9px;
+  font-weight: 400;
+  font-style: italic;
+  cursor: pointer;
+}
+
+
+#clock_on:checked ~ .clock .right_clock{
+  animation-name: read_left;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  right:0px;
+  text-align: center;
+}
+
+#clock_on:checked ~ .clock .right_clock .clock_off{
+display: block;
+}
+
+#clock_on:checked ~ .clock .right_clock .clock_on{
+display: none;
+}
+
+
+#clock_off:checked ~ .clock .right_clock{
+  animation-name: read_left_back;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  right:-240px;
+  text-align: left;
+}
+
+/**/
+
+.road{
+  display: inline-block;
+  width: 480px;
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+}
+
+.right_road {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: right;
+  width: 50%;
+  padding-top: 50%;
+  background: url(img/road.png) no-repeat 50% 50% / cover;
+  z-index: 0
+}
+
+
+.left_road {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -240px;
+  width: 480px;
+  height: 100%;
+  background-color: red;
+  text-align: right;
+}
+
+
+.road_on {
+  display: block;
+  color: #ffffff;
+  font-family: "Open Sans - Semibold Italic";
+  font-size: 9px;
+  font-weight: 400;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.road_off {
+  display: none;
+  color: #ffffff;
+  font-family: "Open Sans - Semibold Italic";
+  font-size: 9px;
+  font-weight: 400;
+  font-style: italic;
+  cursor: pointer;
+}
+
+@keyframes read_right {
+  0% {
+    left: -240px;
+  }
+  100% {
+    left: 0px;
+  }
+
+}
+
+@keyframes read_right_back {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: -240px;
+  }
+
+}
+
+
+#road_on:checked ~ .road .left_road{
+  animation-name: read_right;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  left:0px;
+  text-align: center;
+}
+
+#road_on:checked ~ .road .left_road .road_off{
+display: block;
+}
+
+#road_on:checked ~ .road .left_road .road_on{
+display: none;
+}
+
+
+
+#road_off:checked ~ .road .left_road{
+  animation-name: read_right_back;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  left:-240px;
+  text-align: right;
+}
+
+/**/
+
+.car{
+  display: inline-block;
+  width: 480px;
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+}
+
+.right_car {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: right;
+  width: 50%;
+  padding-top: 50%;
+  background: url(img/car.png) no-repeat 50% 50% / cover;
+  z-index: 0
+}
+
+
+.left_car {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -240px;
+  width: 480px;
+  height: 100%;
+  background-color: red;
+  text-align: right;
+}
+
+
+.car_on {
+  display: block;
+  color: #ffffff;
+  font-family: "Open Sans - Semibold Italic";
+  font-size: 9px;
+  font-weight: 400;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.car_off {
+  display: none;
+  color: #ffffff;
+  font-family: "Open Sans - Semibold Italic";
+  font-size: 9px;
+  font-weight: 400;
+  font-style: italic;
+  cursor: pointer;
+}
+
+
+#car_on:checked ~ .car .left_car{
+  animation-name: read_right;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  left:0px;
+  text-align: center;
+}
+
+#car_on:checked ~ .car .left_car .car_off{
+display: block;
+}
+
+#car_on:checked ~ .car .left_car .car_on{
+display: none;
+}
+
+
+
+#car_off:checked ~ .car .left_car{
+  animation-name: read_right_back;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  left:-240px;
+  text-align: right;
+}
+
+.page_11 input {
+  display: none;
+}
