@@ -8,7 +8,7 @@ body {
 }
 
 .wrapper {
-  padding: 0 25px;
+  padding: 0 auto;
   background: url(img/background_wrapper.png) no-repeat 50% 50% / cover;
 }
 
@@ -2135,6 +2135,10 @@ background:#ffffff url(img/anotherlogo.png) no-repeat 50% 50% / 80% 80%;
   background-color: red;
   text-align: left;
   z-index: 2;
+  padding-right: 250px;
+  padding-left: 30px;
+  padding-top: 35px;
+
 }
 
 
@@ -2183,6 +2187,13 @@ background:#ffffff url(img/anotherlogo.png) no-repeat 50% 50% / 80% 80%;
   animation-timing-function: ease-in-out;
   right:0px;
   text-align: center;
+  padding: 35px;
+}
+
+#coffee_on:checked ~ .coffee .right_coffee .palka_2{
+	margin: 0 auto;
+	margin-top: 10px;
+
 }
 
 #coffee_on:checked ~ .coffee .right_coffee .coffee_off{
@@ -2234,6 +2245,9 @@ display: none;
   background-color: red;
   text-align: left;
   z-index: 2;
+  padding-right: 250px;
+  padding-left: 30px;
+  padding-top: 35px;
 }
 
 
@@ -2264,6 +2278,11 @@ display: none;
   animation-timing-function: ease-in-out;
   right:0px;
   text-align: center;
+  padding: 35px;
+}
+#clock_on:checked ~ .clock .right_clock .palka_2{
+	margin: 0 auto;
+	margin-top: 10px;
 }
 
 #clock_on:checked ~ .clock .right_clock .clock_off{
@@ -2313,7 +2332,10 @@ display: none;
   width: 480px;
   height: 100%;
   background-color: red;
-  text-align: right;
+  text-align: left;
+  padding-top: 35px;
+  padding-left: 265px;
+  padding-right: 25px;
 }
 
 
@@ -2364,6 +2386,7 @@ display: none;
   animation-timing-function: ease-in-out;
   left:0px;
   text-align: center;
+  padding: 35px;
 }
 
 #road_on:checked ~ .road .left_road .road_off{
@@ -2374,6 +2397,11 @@ display: block;
 display: none;
 }
 
+#road_on:checked ~ .road .left_road .palka_2{
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
 
 
 #road_off:checked ~ .road .left_road{
@@ -2381,7 +2409,9 @@ display: none;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   left:-240px;
-  text-align: right;
+  text-align: left;
+  padding-left: 265px;
+  padding-right: 25px;
 }
 
 /**/
@@ -2414,7 +2444,43 @@ display: none;
   width: 480px;
   height: 100%;
   background-color: red;
-  text-align: right;
+  text-align: left;
+  padding-top: 35px;
+  padding-left: 265px;
+  padding-right: 25px;
+}
+
+.art_shirt {
+	color: #ffffff;
+	font-family: "Open Sans";
+	font-size: 7px;
+	font-weight: 400;
+	letter-spacing: 0.35px;
+}
+
+.t_shirt_p11 {
+	color: #ffffff;
+	font-family: "Source Sans Pro - Semibold";
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.6px;
+	margin-top: 15px;
+}
+
+.page_11 .palka_2 {
+	margin: 0;
+	margin-top: 10px;
+}
+
+.c_t_p11{
+	color: #ffffff;
+	font-family: "Open Sans";
+	font-size: 8px;
+	font-weight: 400;
+	line-height: 10px;
+	margin-top: 25px;
+	margin-bottom: 30px;
 }
 
 
@@ -2445,6 +2511,12 @@ display: none;
   animation-timing-function: ease-in-out;
   left:0px;
   text-align: center;
+  padding: 35px;
+}
+
+#car_on:checked ~ .car .left_car .palka_2{
+	margin: 0 auto;
+	margin-top: 10px;
 }
 
 #car_on:checked ~ .car .left_car .car_off{
@@ -2462,9 +2534,12 @@ display: none;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   left:-240px;
-  text-align: right;
+  padding-top: 35px;
+  padding-left: 265px;
+  padding-right: 25px;
 }
 
 .page_11 input {
   display: none;
 }
+
