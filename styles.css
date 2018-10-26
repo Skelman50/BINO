@@ -20,22 +20,153 @@ body {
 .page_1 {
   max-width: 960px;
   margin: 0 auto;
-  background: url(img/put_yor_imagies.png) no-repeat 50% 50% / cover;
-  text-align: center;
-  position: relative;
-  background-color: white;
-
+  /*background: url(img/put_yor_imagies.png) no-repeat 50% 50% / cover;*/
+ position: relative;
+  min-height: 560px;
+  overflow: hidden;
 }
 
-.forma_1 {
-  width: 32px;
-  height: 32px;
+input {
+  display: none;
+}
+
+
+#page_1_1{
+   text-align: center;
   position: absolute;
-  bottom:-15px;
-  left: 48%;
-  border-radius: 50%;
-  background: #f4f5f9 url(img/forma_1.png) no-repeat 50% 50% / 50%;
+  width:100%;
+  height: 100%;
 }
+
+#slide_1{
+  position: absolute;
+  width: 100%;
+  background: url(img/put_yor_imagies.png) no-repeat 50% 50% / cover;
+  height: 100%;
+  left:0;
+  transition: all 0.5s ease-in-out;
+}
+
+#slide_2{
+  position: absolute;
+  width: 100%;
+  background: url(img/put_yor_imagies.png) no-repeat 50% 50% / cover;
+  height: 100%;
+  left: -100%;
+transition: all 0.5s ease-in-out;
+}
+
+#slide_3{
+  position: absolute;
+  width: 100%;
+  background: url(img/put_yor_imagies.png) no-repeat 50% 50% / cover;
+  height: 100%;
+  left: -200%;
+  transition: all 0.5s ease-in-out;
+}
+
+#slide_4{
+  position: absolute;
+  width: 100%;
+  background: url(img/put_yor_imagies.png) no-repeat 50% 50% / cover;
+  height: 100%;
+  left: -300%;
+  transition: all 0.5s ease-in-out;
+}
+
+.white_bcg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+#radio1_p1:checked ~ #page_1_1 label:nth-child(2),
+#radio2_p1:checked ~ #page_1_1 label:nth-child(3),
+#radio3_p1:checked ~ #page_1_1 label:nth-child(4),
+#radio4_p1:checked ~ #page_1_1 label:nth-child(1)
+{
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  width: 25px;
+  height: 25px;
+  background: grey url(img/row_right.png) no-repeat 50% 50%/30%;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+#radio1_p1:checked ~ #page_1_1 label:nth-child(4),
+#radio2_p1:checked ~ #page_1_1 label:nth-child(1),
+#radio3_p1:checked ~ #page_1_1 label:nth-child(2),
+#radio4_p1:checked ~ #page_1_1 label:nth-child(3)
+{
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  width: 25px;
+  height: 25px;
+  background: grey url(img/row_left.png) no-repeat 50% 50%/30%;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+#radio1_p1:checked ~ #page_1_1 label:nth-child(4):hover,
+#radio2_p1:checked ~ #page_1_1 label:nth-child(1):hover,
+#radio3_p1:checked ~ #page_1_1 label:nth-child(2):hover,
+#radio4_p1:checked ~ #page_1_1 label:nth-child(3):hover {
+   background: red url(img/row_left_hover.png) no-repeat 50% 50%/30%;
+}
+
+#radio1_p1:checked ~ #page_1_1 label:nth-child(2):hover,
+#radio2_p1:checked ~ #page_1_1 label:nth-child(3):hover,
+#radio3_p1:checked ~ #page_1_1 label:nth-child(4):hover,
+#radio4_p1:checked ~ #page_1_1 label:nth-child(1):hover {
+   background: red url(img/row_right_hover.png) no-repeat 50% 50%/30%;
+}
+
+#radio2_p1:checked ~ #slide_1{
+left:100%;
+}
+#radio2_p1:checked ~ #slide_2{
+left:0%;
+}
+#radio2_p1:checked ~ #slide_3{
+left:-100%;
+}
+#radio2_p1:checked ~ #slide_4{
+left:-200%;
+}
+
+#radio3_p1:checked ~ #slide_1{
+left:200%;
+}
+#radio3_p1:checked ~ #slide_2{
+left:100%;
+}
+#radio3_p1:checked ~ #slide_3{
+left:0%;
+}
+#radio3_p1:checked ~ #slide_4{
+left:-100%;
+}
+
+#radio4_p1:checked ~ #slide_1{
+left:300%;
+}
+#radio4_p1:checked ~ #slide_2{
+left:200%;
+}
+#radio4_p1:checked ~ #slide_3{
+left:100%;
+}
+#radio4_p1:checked ~ #slide_4{
+left:0%;
+}
+
+
 
 .header_1 {
   padding: 20px 0px;
@@ -187,7 +318,19 @@ margin-top: 23px;
    padding-top: 62px;
    background-color: white;
    text-align: center;
+   position: relative;
 }
+
+.forma_1 {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top:-10px;
+  left: 48%;
+  border-radius: 50%;
+  background: #f4f5f9 url(img/forma_1.png) no-repeat 50% 50% / 50%;
+}
+
 .box_1_page_2 {
   display: inline-block;
   cursor: pointer;
@@ -1194,7 +1337,7 @@ visibility: hidden;
   padding-right: 30px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
-  width: 35%;
+  width: 350px;
   position: absolute;
   top:25px;
   left: 19%;
@@ -1336,8 +1479,6 @@ visibility: hidden;
 .page_7 {
   max-width: 960px;
   margin: 0 auto;
-  padding-left: 10%;
-  padding-right: 10%;
   padding-top: 80px;
   padding-bottom: 70px;
   background: url(img/bcg_p7.png) no-repeat 50% 50% / cover;
