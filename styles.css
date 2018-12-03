@@ -3011,10 +3011,6 @@ display: none;
 }
 }
 
-
-
-
-
 .page_12 {
   max-width: 100%;
   margin: 0 auto;
@@ -3022,6 +3018,10 @@ display: none;
   padding-top: 150px;
   padding-bottom: 150px;
   background-color: #f4f5f9;
+}
+
+.page_12 input{
+  display: inline-block;
 }
 
 .page_12 h1 {
@@ -3221,12 +3221,13 @@ form, .contact_info {
 }
 
 .goback{
-  position: absolute;
+  position: fixed;
   height: 50px;
   width: 50px;
   background: red url(img/strela_vverkh.png) no-repeat 50% 50% /50%;
   border-radius: 50%;
-  top:-20%;
-  right: 5%;
+  bottom: 0;
+  right: 10%;
   cursor: pointer;
+  z-index: 2;
 }
